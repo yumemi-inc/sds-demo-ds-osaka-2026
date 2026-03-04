@@ -10,6 +10,13 @@ import {
 import { placeholder } from "images";
 import { ButtonProps, Image, Text, TextHeading } from "primitives";
 
+figma.connect(Card, "<FIGMA_CARDS_SIMPLE_CARD>", {
+  props: {
+    children: figma.children("Slot"),
+  },
+  example: ({ children }) => <Card variant="stroke">{children}</Card>,
+});
+
 figma.connect(Card, "<FIGMA_CARDS_CARD>", {
   props: {
     asset: figma.enum("Asset Type", {
