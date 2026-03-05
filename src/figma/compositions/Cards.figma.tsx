@@ -12,7 +12,7 @@ import { ButtonProps, Image, Text, TextHeading } from "primitives";
 
 figma.connect(Card, "<FIGMA_CARDS_SIMPLE_CARD>", {
   props: {
-    children: figma.children("Slot"),
+    children: figma.children("*"),
   },
   example: ({ children }) => <Card variant="stroke">{children}</Card>,
 });
