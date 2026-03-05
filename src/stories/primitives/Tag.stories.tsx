@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { IconAirplay, IconCheck } from "icons";
 import { Flex } from "layout";
 import {

@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { placeholder } from "images";
 import { Flex } from "layout";
 import { Avatar, AvatarBlock, AvatarButton, AvatarGroup } from "primitives";

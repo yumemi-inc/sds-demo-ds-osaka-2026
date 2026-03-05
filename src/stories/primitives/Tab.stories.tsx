@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Tab, TabList, TabPanel, Tabs } from "primitives";
 
 const meta: Meta<typeof Tabs> = {
