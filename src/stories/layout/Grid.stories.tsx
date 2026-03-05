@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Grid, GridItem } from "layout";
 
 const meta: Meta<typeof Grid> = {
@@ -38,7 +38,17 @@ export const StoryBasicGrid: StoryObj<typeof Grid> = {
     },
     columns: {
       control: { type: "select" },
-      options: ["1", "2", "3", "4", "5", "auto", "none", "repeat(3, 1fr)", "repeat(5, 1fr)"],
+      options: [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "auto",
+        "none",
+        "repeat(3, 1fr)",
+        "repeat(5, 1fr)",
+      ],
     },
     rows: {
       control: { type: "select" },
@@ -109,21 +119,11 @@ export const StoryGridAreas: StoryObj<typeof Grid> = {
         gridTemplateRows: "auto auto auto",
       }}
     >
-      <GridItem area="header">
-        {renderChild("Header")}
-      </GridItem>
-      <GridItem area="sidebar">
-        {renderChild("Sidebar")}
-      </GridItem>
-      <GridItem area="main">
-        {renderChild("Main Content")}
-      </GridItem>
-      <GridItem area="aside">
-        {renderChild("Aside")}
-      </GridItem>
-      <GridItem area="footer">
-        {renderChild("Footer")}
-      </GridItem>
+      <GridItem area="header">{renderChild("Header")}</GridItem>
+      <GridItem area="sidebar">{renderChild("Sidebar")}</GridItem>
+      <GridItem area="main">{renderChild("Main Content")}</GridItem>
+      <GridItem area="aside">{renderChild("Aside")}</GridItem>
+      <GridItem area="footer">{renderChild("Footer")}</GridItem>
     </Grid>
   ),
 };
@@ -160,4 +160,4 @@ export const StoryCardGrid: StoryObj<typeof Grid> = {
       </GridItem>
     </Grid>
   ),
-}; 
+};

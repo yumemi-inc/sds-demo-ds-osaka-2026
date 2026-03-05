@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { placeholder } from "images";
 import { Image, Picture, PictureSource } from "primitives";
 

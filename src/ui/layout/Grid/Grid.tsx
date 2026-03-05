@@ -79,13 +79,7 @@ export function Grid({
     alignItems,
   };
 
-  return (
-    <div
-      className={classNames}
-      style={gridStyle}
-      {...props}
-    />
-  );
+  return <div className={classNames} style={gridStyle} {...props} />;
 }
 
 export type GridItemProps = ComponentPropsWithoutRef<"div"> & {
@@ -103,22 +97,20 @@ export type GridItemProps = ComponentPropsWithoutRef<"div"> & {
   area?: CSSProperties["gridArea"];
 };
 
-export function GridItem({ className, column, row, area, style = {}, ...props }: GridItemProps) {
-  const classNames = clsx(
-    className,
-    "grid-item",
-  );
+export function GridItem({
+  className,
+  column,
+  row,
+  area,
+  style = {},
+  ...props
+}: GridItemProps) {
+  const classNames = clsx(className, "grid-item");
 
-  const gridItemStyle: CSSProperties = { ...style, };
+  const gridItemStyle: CSSProperties = { ...style };
   if (column) gridItemStyle.gridColumn = column;
   if (row) gridItemStyle.gridRow = row;
   if (area) gridItemStyle.gridArea = area;
 
-  return (
-    <div
-      className={classNames}
-      style={gridItemStyle}
-      {...props}
-    />
-  );
-} 
+  return <div className={classNames} style={gridItemStyle} {...props} />;
+}

@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { IconActivity, IconArrowLeft } from "icons";
 import { Button, ButtonDanger, ButtonGroup } from "primitives";
 
