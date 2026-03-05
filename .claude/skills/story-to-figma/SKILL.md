@@ -1,6 +1,6 @@
 ---
 name: story-to-figma
-description: StorybookのストーリーをキャプチャしてFigmaファイルに追加する
+description: StorybookのストーリーをキャプチャしてFigmaファイルに追加する。Use when the user wants to capture a Storybook story and add it to Figma, "StorybookをFigmaに追加して", "ストーリーをFigmaに送って", "StorybookのコンポーネントをFigmaにキャプチャして", "capture story to Figma", "send story to Figma", "add Storybook component to Figma", "ストーリーをFigmaにエクスポートして". Requires Figma MCP server connection and Storybook running locally.
 disable-model-invocation: true
 user-invocable: true
 allowed-tools: Read, Edit, Grep, Glob, Bash, WebFetch, mcp__figma__generate_figma_design
